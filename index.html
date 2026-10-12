@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annual Tech Symposium 2026</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Mobile App Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+
+  <header>
+    <h1>Tech Symposium 2026</h1>
+    <p>October 24–25 • Main Auditorium</p>
+  </header>
+
+  <nav>
+    <button class="nav-btn active" onclick="switchTab('schedule')">Schedule</button>
+    <button class="nav-btn" onclick="switchTab('speakers')">Speakers</button>
+    <button class="nav-btn" onclick="switchTab('info')">Info & Map</button>
+  </nav>
+
+  <main>
+    <!-- Schedule Section -->
+    <section id="schedule" class="tab-content active">
+      <h2>Program Schedule</h2>
+      
+      <div class="card">
+        <span class="time">09:00 AM - 10:00 AM</span>
+        <h3>Opening Keynote: Future of Web Tech</h3>
+        <p class="speaker">Dr. Alex Morgan</p>
+        <p class="location">📍 Main Stage</p>
+      </div>
+
+      <div class="card">
+        <span class="time">10:15 AM - 11:30 AM</span>
+        <h3>Building Scalable Web Applications</h3>
+        <p class="speaker">Sarah Chen</p>
+        <p class="location">📍 Room B</p>
+      </div>
+
+      <div class="card">
+        <span class="time">12:00 PM - 01:30 PM</span>
+        <h3>Networking Lunch</h3>
+        <p class="location">📍 Dining Hall</p>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="tab-content">
+      <h2>Featured Speakers</h2>
+
+      <div class="card">
+        <h3>Dr. Alex Morgan</h3>
+        <p class="role">Lead Researcher, Web Standards Institute</p>
+        <p>Expert in distributed systems and modern web protocols with over 15 years of industry experience.</p>
+      </div>
+
+      <div class="card">
+        <h3>Sarah Chen</h3>
+        <p class="role">Principal Engineer, CloudTech</p>
+        <p>Specializes in high-performance front-end architecture and progressive web applications.</p>
+      </div>
+    </section>
+
+    <!-- Venue & Info Section -->
+    <section id="info" class="tab-content">
+      <h2>Venue & Information</h2>
+      
+      <div class="card">
+        <h3>Wi-Fi Details</h3>
+        <p><strong>Network:</strong> ConfGuest2026</p>
+        <p><strong>Password:</strong> welcome2026</p>
+      </div>
+
+      <div class="card">
+        <h3>Location & Parking</h3>
+        <p>Grand City Center, 123 Main Street.</p>
+        <p>Free parking is available in Garage B with event badge display.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
