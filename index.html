@@ -20,6 +20,7 @@
   <nav>
     <button class="nav-btn active" onclick="switchTab('schedule')">Schedule</button>
     <button class="nav-btn" onclick="switchTab('speakers')">Speakers</button>
+    <button class="nav-btn" onclick="switchTab('speakers')">Search</button>
   </nav>
 
   <main>
@@ -28,67 +29,87 @@
       <h2>Program Schedule</h2>
       
       <div class="card">
-        <span class="time">9:00 AM</span>
-        <h3>Opening Remarks: Welcome to the Event</h3>
+        <h3><span class="time">9:00 AM</span></h3>
+        <h4>Opening Remarks: Welcome to the Event</h4>
         <p class="speaker">Dr. John Frye, Director, URiCA</p>
         <p class="location">Hamilton Room</p>
       </div>
 
       <div class="card">
-        <span class="time">9:05 AM</span>
-        <h3>Opening Remarks: Importance of URiCA on Campus</h3>
+        <h3><span class="time">9:05 AM</span></h3>
+        <h4>Opening Remarks: Importance of URiCA on Campus</h4>
         <p class="speaker">Dr. Corey King, UWW Chancellor</p>
         <p class="location">Hamilton Room</p>
       </div>
 
       <div class="card">
-        <span class="time">9:10 AM</span>
-        <h3>Theatrical and Musical Performances</h3>
+        <h3><span class="time">9:10 AM</span></h3>
+        <h4>Theatrical and Musical Performances</h4>
         <p class="location">Hamlton Room</p>
       </div>
     </section>
 
     <div class="card">
-        <span class="time">9:30 AM - 11:45 AM</span>
-        <h3>Poster and Art Presentations</h3>
+        <h3><span class="time">9:30 AM - 11:45 AM</span></h3>
+        <h4>Project Presentations</h4>
         <p class="location">Hamlton Room</p>
       </div>
     </section>
 
-    <!-- Speakers Section -->
-    <section id="speakers" class="tab-content">
-      <h2>Featured Speakers</h2>
-
-      <div class="card">
-        <h3>Dr. Alex Morgan</h3>
-        <p class="role">Lead Researcher, Web Standards Institute</p>
-        <p>Expert in distributed systems and modern web protocols with over 15 years of industry experience.</p>
+    <div class="card">
+        <h3><span class="time">11:45 AM</span></h3>
+        <h4>Awards Ceremony</h4>
+        <p class="speaker">Dr. John Frye, Director, URiCA</p>
+        <p class="speaker">Brian Schanen, Associate Director, URiCA</p>
+        <p class="speaker">Dr. Pieter deHart, UWW Provost</p>
+        <p class="location">Hamilton Room</p>
       </div>
 
+    <div class="card">
+        <h3><span class="time">11:55 AM</span></h3>
+        <h4>Closing Remarks: Celebration of Students and Mentors</h4>
+        <p class="speaker">Dr. Pieter deHart, UWW Provost</p>
+        <p class="location">Hamilton Room</p>
+      </div>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="tab-content">
+      <h2>Theatrical and Musical Performers</h2>
+
       <div class="card">
-        <h3>Sarah Chen</h3>
-        <p class="role">Principal Engineer, CloudTech</p>
-        <p>Specializes in high-performance front-end architecture and progressive web applications.</p>
+        <h3>Viktor Martinson, Vocal Performance major</h3>
+        <h4>Mentor: Dr. Robert Hodson, Music</h4>
+        <p>Japanese Shamisen</p>
+      </div>
+
+      <h2>Theatrical and Musical Performers</h2>
+
+      <div class="card">
+        <h3>Emmalee Empey, Mathematics and Economics major</h3>
+        <h4>Mentor: Dr. Sakshi Bhardwaj, Economics</h4>
+        <h5>Poster Location: 5</h5>
+        <p>Does the Child Tax Credit Promote Family Stability? Evidence on Children’s Living Arrangements and Household Stability
+</p>
       </div>
     </section>
 
     <!-- Venue & Info Section -->
-    <section id="info" class="tab-content">
-      <h2>Venue & Information</h2>
+    <! section id="info" class="tab-content">
+      <! h2>Venue & Information</h2>
       
-      <div class="card">
-        <h3>Wi-Fi Details</h3>
-        <p><strong>Network:</strong> ConfGuest2026</p>
-        <p><strong>Password:</strong> welcome2026</p>
-      </div>
+      <! div class="card">
+        <! h3>Wi-Fi Details</h3>
+        <! p><strong>Network:</strong> ConfGuest2026</p>
+        <! p><strong>Password:</strong> welcome2026</p>
+      <! /div>
 
-      <div class="card">
-        <h3>Location & Parking</h3>
-        <p>Grand City Center, 123 Main Street.</p>
-        <p>Free parking is available in Garage B with event badge display.</p>
-      </div>
-    </section>
-  </main>
+      <! div class="card">
+        <! h3>Location & Parking</h3>
+        <! p>Grand City Center, 123 Main Street.</p>
+        <! p>Free parking is available in Garage B with event badge display.</p>
+      <! /div>
+    <! /section>
+  <! /main>
 
   <script src="script.js"></script>
 </body>
