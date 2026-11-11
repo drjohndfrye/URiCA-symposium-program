@@ -72,6 +72,8 @@
       <option value="viktor-martinson">Viktor Martinson</option>
     </select>
   </div>
+
+  <main>
         
 <section id="emma-aleckson" class="person-entry">
   <div class="card"style="margin-bottom: 48px;"><p>
@@ -321,7 +323,7 @@
         <h3>Andrew Veroeven, Environmental Science major</h3>
         <h4>Mentor: Prajukti Bhattacharyya, Geography, Geology, and Environmental Science</h4>
         <h4><a href="presenter-veroeven.html">Full Abstract</a></h4>
-</p></div>
+</p></div></section>
 
   <section id="cameron-zehr" class="person-entry">
   <div class="card"style="margin-bottom: 48px;"><p>
@@ -331,4 +333,25 @@
         <h4>Mentor: Kirsten Crossgrove, Biology</h4>
         <h4><a href="presenter-zehr.html">Full Abstract</a></h4>
 </p></div>
+  </section>
+</section>
+  </main>
+  <script>
+    function jumpToName(targetId) {
+      if (!targetId) return;
+
+      const element = document.getElementById(targetId);
+      if (element) {
+        // Smoothly scroll to target element
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // Update URL hash without triggering an abrupt jump
+        history.pushState(null, null, `#${targetId}`);
+      }
+    }
+  </script>
+
+</body>
+</html>
+
 
