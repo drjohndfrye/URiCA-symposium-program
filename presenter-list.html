@@ -8,6 +8,50 @@
   <!-- Mobile App Meta Tags -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#2563eb">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    /* Sticky header so the drop-down stays visible while scrolling */
+    .dropdown-container {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      padding: 15px 0;
+      border-bottom: 2px solid #e0e0e0;
+      z-index: 100;
+    }
+
+    select {
+      padding: 8px 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .person-entry {
+      margin-top: 40px;
+      margin-bottom: 400px; /* Extra space to allow scrolling to the bottom items */
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-left: 4px solid #0066cc;
+      border-radius: 4px;
+      scroll-margin-top: 70px; /* Prevents sticky header from obscuring element top */
+    }
+
+    /* Highlight effect when an entry is selected */
+    .person-entry:target {
+      background-color: #e6f2ff;
+      border-left-color: #004499;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -16,6 +60,18 @@
     <h1>URiCA Fall Symposium 2026 Presenters</h1>
     <p>Listed in alphabetical order by lead authors' last names.</p>
   </header>
+
+<!-- Dropdown Navigation -->
+  <div class="dropdown-container">
+    <label for="nameSelect"><strong>Jump to person:</strong> </label>
+    <select id="nameSelect" onchange="jumpToName(this.value)">
+      <option value="">-- Choose a Name --</option>
+      <option value="alice-smith">Alice Smith</option>
+      <option value="bob-jones">Bob Jones</option>
+      <option value="charlie-brown">Charlie Brown</option>
+      <option value="diana-prince">Diana Prince</option>
+    </select>
+  </div>
         
 <div class="card"style="margin-bottom: 48px;"><p>
         <h2>Exploring Long-Term Outcomes in an Inclusive Post-Secondary Transition Program</h2>
